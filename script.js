@@ -5,6 +5,13 @@
 
 // document.body.innerHTML = "<p>Pepa Novak si vydelal: " + plat + " Kc.</p>" 
 
+/*Představte si, že vyrábíte registrační systém na očkování proti COVID-19. U každého registrovaného chceme evidovat jméno a věk.
+
+Vytvořte webovou stránku, která se uživatele zeptá nejdříve na jméno a poté na věk. Tyto hodnoty si uložte do smysluplně pojmenovaných proměnných. Nezpomeňte věk převést na číslo.
+Poté, co uživatel zadá všechny údaje, vypište do stránky odstavec s obsahem ve tvaru
+Květoslav Voňavý, věk: 67
+*/
+
 const meno = prompt("Vpíšte meno") 
 const vek = Number(prompt ("Vek"))
 
