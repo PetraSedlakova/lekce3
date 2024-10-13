@@ -21,9 +21,27 @@
  Do stránky vypište výsledek zabalený do nějaké přívětivé formulace. Dbejte na to, abyste korektně převedli uživatelem zadanou hodnotu na číslo.
 Nechte uživatele zadat nejen hodinovou sazbu, ale také počet hodin a dní v měsíci. Opět dejte pozor na správnou konverzi.*/
 
-const hodinovka = Number(prompt("Zadajte hodinovu sadzbu"))
-const pocetHodin = 8
-const pocetDni = 21
-const hrubaMzda = (hodinovka * pocetHodin) * pocetDni
+// const hodinovka = Number(prompt("Zadajte hodinovu sadzbu"))
+// const pocetHodin = 8
+// const pocetDni = 21
+// const hrubaMzda = (hodinovka * pocetHodin) * pocetDni
 
-document.body.innerHTML = "<p>Pri hodinovej sadzbe " + hodinovka + " je vasa hruba mzda " + hrubaMzda + " Kc.</p>"
+// document.body.innerHTML = "<p>Pri hodinovej sadzbe " + hodinovka + " je vasa hruba mzda " + hrubaMzda + " Kc.</p>"
+
+/*Zakladám databázu knih*/
+
+const nazov = "Kniha 1"
+const autor = "Petra Sedlakova"
+const cena = 450
+const naSklade = true
+
+//premenne si mozem dat do jedneho objekut
+const kniha = {
+    nazov: "Kniha 1",
+    autor: "Petra Sedlakova",
+    cena: 450,
+    naSklade: true,
+}
+
+document.body.innerHTML += "<p>Kniha: " + nazov + ", autor: " + autor + "</p>"
+document.body.innerHTML += "<p>Kniha: " + kniha.nazov + ", autor: " + kniha.autor + "</p>" //ak vypisujem z objektu, je to v zapise nazov Kniha(nazov const).nazov
