@@ -30,18 +30,82 @@ Nechte uživatele zadat nejen hodinovou sazbu, ale také počet hodin a dní v m
 
 /*Zakladám databázu knih*/
 
-const nazov = "Kniha 1"
-const autor = "Petra Sedlakova"
-const cena = 450
-const naSklade = true
+// const nazov = "Kniha 1"
+// const autor = "Petra Sedlakova"
+// const cena = 450
+// const naSklade = true
 
-//premenne si mozem dat do jedneho objekut
-const kniha = {
-    nazov: "Kniha 1",
-    autor: "Petra Sedlakova",
-    cena: 450,
-    naSklade: true,
-}
+// //premenne si mozem dat do jedneho objekut
+// const kniha = {
+//     nazov: "Kniha 1",
+//     autor: "Petra Sedlakova",
+//     cena: 450,
+//     naSklade: true,
+// }
 
-document.body.innerHTML += "<p>Kniha: " + nazov + ", autor: " + autor + "</p>"
-document.body.innerHTML += "<p>Kniha: " + kniha.nazov + ", autor: " + kniha.autor + "</p>" //ak vypisujem z objektu, je to v zapise nazov Kniha(nazov const).nazov
+// kniha.autor = "Jana"
+// kniha.jazyk = "cestina" //ak napisem klic.XX prida sa to do toho objektu
+
+// document.body.innerHTML += "<p>Kniha: " + nazov + ", autor: " + autor + "</p>"
+// document.body.innerHTML += "<p>Kniha: " + kniha.nazov + ", autor: " + kniha.autor + "</p>" //ak vypisujem z objektu, je to v zapise nazov Kniha(nazov const).nazov
+
+//OBJEKT v OBJEKTU - 
+
+// const user1 = {
+//     fullName: 'Lubomír Větvička',
+//     login: 'lubos',
+//     address: {
+//       streetName: 'Pod Kaštany',
+//       number: 31,
+//       city: 'Horní Dlouhonosy',
+//       postalCode: '123 11',
+//     },
+//     cartItems: 0,
+//   };
+
+//   console.log(user1.address.city) //ak mam objekt v objkete, musim sa napojit na druhy objekt a cez tecku pridat const. 
+
+/*Mějme následující objekt představující inzerát na stránkách nějaké realitní kanceláře.*/
+
+// const apartment = {
+//     type: 'rent',
+//     disposition: '3+1',
+//     area: {
+//       floorage: 100,
+//       balcony: 2,
+//       units: 'sqm',
+//     },
+//     city: 'Prague',
+//     district: 'Old Town',
+//     price: {
+//       rent: 28000,
+//       fees: {
+//         water: 1000,
+//         energy: 2500,
+//         services: 560,
+//       },
+//       currency: 'czk',
+//     },
+//     ownership: 'personal',
+//     condition: 'renovated',
+//     status: 'free',
+//     floor: 3,
+//   };
+
+//   /*Vytvořte webovou stránku s JavaScriptem, zkopírujte si tento kód do vašeho programu a vyřešte následující úkoly.
+
+// Pomocí tečkové notace vypište do stránky dispozici bytu.
+// Vypište do stránky čistý nájem bez poplatků.
+// Vypište do stránky celý objekt představující výměru bytu.
+// Do separátních proměnných uložte město a městskou část. Vypište je do stránky.
+// Změnte stav inzerátu z 'free' na 'taken'.*/
+
+// document.body.innerHTML += "<p>Čístý nájom bez poplatkov je: " + apartment.price.rent + "</p>"
+// document.body.innerHTML += "<p>Dispozícia bytu je:" + apartment.disposition + " Rozmer bytu je: " + apartment.area.floorage + " Počet balkónov je: " + apartment.area.balcony + "</p>"
+
+// const mesto = apartment.city
+// const mestskaCast = apartment.district
+
+// document.body.innerHTML += "<p> Byt sa nachádza v meste: " + mesto + " a v mestskej časti: " + mestskaCast + "</p>"
+
+
